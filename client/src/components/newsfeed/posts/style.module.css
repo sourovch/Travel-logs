@@ -1,0 +1,82 @@
+.logCard {
+    width: 95%;
+    margin: .5em auto;
+    background-color: var(--bg-s-color);
+    border-radius: 9px;
+    border-top-left-radius: 0px;
+    padding: 1em;
+    border: 3px groove;
+
+    --date-width: 300px;
+    --grid-m-width: 320px;
+}
+
+.logCard a {
+    color: var(--color-t);
+}
+
+.logHeading {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+}
+
+.visitorName {
+    margin: 0.2em 0;
+    opacity: .5;
+}
+
+.expSum {
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--grid-m-width), auto));
+}
+
+.photos {
+    width: 100%;
+    gap: 5px;
+}
+
+.photoWrapper {
+    overflow: hidden;
+    max-height: 270px;
+    border-radius: 9px;
+    border-top-left-radius: 0;
+}
+
+.photoWrapper > img {
+    margin: auto;
+}
+
+.editBtn {
+    margin-left: auto;
+}
+
+.authBtn {
+    margin-left: auto !important;
+}
+
+.flex {
+    display: flex;
+    gap: 1%;
+}
+
+.authForm {
+    margin: 1em;
+    margin-left: auto;
+}
+
+.authForm label {
+    width: 100px;
+}
+
+@media screen and (max-width: 400px) {
+    .logCard {
+        --grid-m-width: 150px;
+    }
+}

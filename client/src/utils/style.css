@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-p-color: rgb(230, 230, 240);
+    --bg-s-color: rgb(240, 240, 240);
+    --color-p: rgb(50, 100, 230);
+    --color-s: rgb(153, 111, 236);
+    --color-t: rgb(255, 32, 233);
+    --color-dark: rgb(25, 30, 20);
+
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    white-space: normal;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: var(--bg-s-color);
+}
+
+nav {
+    margin: .8em 0;
+    margin-top: 0;
+    padding: 1em .5em;
+    padding-right: 1.2em;
+    line-height: 2;
+    background-color: var(--color-p);
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--bg-s-color);
+}
+
+button {
+    background-color: var(--color-s);
+    padding: .7em .5em;
+    color: white;
+    margin: .5em;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+}
+
+label {
+    display: inline-block;
+}
+
+textarea {
+    resize: none;
+}
+
+.container {
+    width: clamp(250px, 100%, 1100px);
+    margin: auto;
+    background-color: var(--bg-p-color);
+}
+
+.nav-btn {
+    padding: .8em 1.5em;
+    margin: .5em;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-top-right-radius: 9px;
+    transition: background 400ms ease-in-out;
+}
+
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.nav-btn.active {
+    background-color: var(--color-s);
+}
+
+.content-wrapper > div {
+    padding: 1.5em;
+}
+
+
+.logo {
+    margin: 0;
+    margin-left: .5em;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--bg-s-color);
+    text-decoration: underline gray;
+}
+
+.logForm label {
+    width: 15%;
+    font-size: 1.2em;
+}
+
+.logForm input,
+.logForm > textarea {
+    font-size: 1.1em;
+    padding: .8em;
+    margin: .7em;
+    margin-left: 0;
+    width: 70%;
+}
+
+.logForm > textarea {
+    vertical-align: middle;
+}
