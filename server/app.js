@@ -22,8 +22,7 @@ app.use('*', (req, res) => {
 });
 
 const port = process.env.PORT || 5000;
-const uri =
-  'mongodb+srv://sourovch:2o4my6god8*6@fullstackprojects.wftxd.mongodb.net/travel_logs?retryWrites=true&w=majority';
+const uri = process.env.URI;
 
 connect(uri, () => {
   app.listen(port, () =>
